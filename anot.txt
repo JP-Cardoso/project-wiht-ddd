@@ -1,0 +1,19 @@
+Iniciando um projeto Type
+npx tsc --init
+
+-=--=--=--=--=--=
+Regras de negócio, são formas de mudar o comportamento do sua entidade
+
+-=--=--=--=---=--=
+Entidade anêmica:
+- É uma entidade que normalmente não carrega regras de negócio, que apenas está servido
+    para guardar dados.
+
+-=-=-=-=-=-=-=-=-=
+Uma entidade rica, além de trabalhar e conter as suas RN, os métodos que forem implementados nela
+dever ser expressivos no que vai fazer e realizar (Mudanças na entidade);
+
+- Uma entidade inconcistente é não é confiável.
+
+===========================================================
+Para fazer compilação do Ts para o jest use o @SWC
