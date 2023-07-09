@@ -17,3 +17,10 @@ dever ser expressivos no que vai fazer e realizar (Mudanças na entidade);
 
 ===========================================================
 Para fazer compilação do Ts para o jest use o @SWC
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+AGREGADOS:
+
+- Customer -> Address
+- Order -> OrderItem
+- Product 
