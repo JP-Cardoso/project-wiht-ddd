@@ -42,6 +42,10 @@ export default class Customer {
         this.validate()
     }
 
+    changeAddress(addres: Address) {
+        this._address = addres;
+    }
+
     isActive(): boolean {
         return this._active
     }
