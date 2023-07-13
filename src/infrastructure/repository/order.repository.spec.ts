@@ -10,6 +10,7 @@ import ProductRepository from "./product.repository";
 import Product from "../../domain/entity/product";
 import OrderItem from "../../domain/entity/order_item";
 import Order from "../../domain/entity/order";
+import OrderRepository from "./order.repositor";
 
 
 describe("Order repository test", () => {
@@ -47,6 +48,7 @@ describe("Order repository test", () => {
     const order = new Order("123", "123", [ordemItem]);
 
     const orderRepository = new OrderRepository();
+   
     await orderRepository.create(order);
 
     const orderModel = await OrderModel.findOne({ where: { id: order.id }, include: ["items"] });
@@ -61,7 +63,8 @@ describe("Order repository test", () => {
           name: ordemItem.name,
           price: ordemItem.price,
           quantity: ordemItem.quantity,
-          order_id: "1234"
+          order_id: "123",
+          product_id: "1234"
         }
       ]
     })
