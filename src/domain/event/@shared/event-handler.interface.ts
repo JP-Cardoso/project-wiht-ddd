@@ -3,10 +3,9 @@
  * Porém, o tipo padrão desse generics, deve ser um EventInterface
  */
 
-import EventInterface from "./event.interface";
 
-export default interface EventHandlerInterface<T extends EventInterface = EventInterface> {
 
+import EventInterface from './event.interface';
+export default interface EventHandlerInterface<T extends EventInterface=EventInterface> {
     handle(event: T): void;
-
 }
