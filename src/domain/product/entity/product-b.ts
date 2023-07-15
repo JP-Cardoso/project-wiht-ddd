@@ -33,7 +33,7 @@ export default class ProductB implements ProductInterafce {
     }
 
     changePrice(price: number): void {
-        this._price = price * 2;
+        this._price = price;
         this.validate();
     }
 
@@ -46,6 +46,6 @@ export default class ProductB implements ProductInterafce {
     }
 
     get price(): number {
-        return this._price
+        return this._price * 2
     }
 }
